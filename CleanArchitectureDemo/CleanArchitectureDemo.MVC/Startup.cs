@@ -1,5 +1,6 @@
 using CleanArchitectureDemo.Infrastructure.Data.Context;
 using CleanArchitectureDemo.MVC.Data;
+using Infrastructure.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -28,6 +29,9 @@ namespace CleanArchitectureDemo.MVC
             services.AddDatabaseDeveloperPageExceptionFilter();
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
+
+            // Register services from Dependency Injectio (Infrastructure.IoC)
+            RegisterServices(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,6 +61,11 @@ namespace CleanArchitectureDemo.MVC
             {
                 endpoints.MapRazorPages();
             });
+        }
+
+        private static void RegisterServices(IServiceCollection services)
+        {
+            DependencyInjection.RegisterServices(services);
         }
     }
 }
