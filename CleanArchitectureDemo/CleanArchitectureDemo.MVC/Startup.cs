@@ -29,6 +29,7 @@ namespace CleanArchitectureDemo.MVC
             services.AddDatabaseDeveloperPageExceptionFilter();
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
+            services.AddControllersWithViews();
 
             // Register services from Dependency Injectio (Infrastructure.IoC)
             RegisterServices(services);
@@ -59,6 +60,9 @@ namespace CleanArchitectureDemo.MVC
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

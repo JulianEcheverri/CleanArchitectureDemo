@@ -12,7 +12,7 @@ namespace CleanArchitectureDemo.MVC.Controllers
             _courseService = courseService;
         }
 
-        public IActionResult Index()
+        public ActionResult Index()
         {
             return View(_courseService.GetCourses());
         }

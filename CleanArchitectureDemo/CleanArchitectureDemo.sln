@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{F1A42A61-C1C1-42D0-8D87-37879ED27794}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureDemo.MVC", "CleanArchitectureDemo.MVC\CleanArchitectureDemo.MVC.csproj", "{0D685FA9-FF69-4C4F-8CD4-2A6455F59289}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureDemo.MVC", "CleanArchitectureDemo.MVC\CleanArchitectureDemo.MVC.csproj", "{0D685FA9-FF69-4C4F-8CD4-2A6455F59289}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{59A85F70-654A-4A49-B33D-AA4397F5B111}"
 EndProject
@@ -15,13 +15,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure.Data", "Infr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure.IoC", "Infrastructure.IoC", "{BEDE0ABF-3B41-4CCA-A713-93AB1CE8E685}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureDemo.Domain", "CleanArchitectureDemo.Domain\CleanArchitectureDemo.Domain.csproj", "{58EA5CDF-58DD-40E7-8557-7CB32D9A1381}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureDemo.Domain", "CleanArchitectureDemo.Domain\CleanArchitectureDemo.Domain.csproj", "{58EA5CDF-58DD-40E7-8557-7CB32D9A1381}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureDemo.Infrastructure.Data", "CleanArchitectureDemo.Infrastructure.Data\CleanArchitectureDemo.Infrastructure.Data.csproj", "{7295D60D-3BE4-4868-9DCA-6D0F1056E0C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureDemo.Infrastructure.Data", "CleanArchitectureDemo.Infrastructure.Data\CleanArchitectureDemo.Infrastructure.Data.csproj", "{7295D60D-3BE4-4868-9DCA-6D0F1056E0C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureDemo.Application", "CleanArchitectureDemo.Application\CleanArchitectureDemo.Application.csproj", "{C588E59E-6521-4FE5-9C5B-8EC0A448B407}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureDemo.Application", "CleanArchitectureDemo.Application\CleanArchitectureDemo.Application.csproj", "{C588E59E-6521-4FE5-9C5B-8EC0A448B407}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.IoC", "Infrastructure.IoC\Infrastructure.IoC.csproj", "{7F04F146-C43D-43A4-8305-7B828BA1F7FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.IoC", "Infrastructure.IoC\Infrastructure.IoC.csproj", "{7F04F146-C43D-43A4-8305-7B828BA1F7FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
