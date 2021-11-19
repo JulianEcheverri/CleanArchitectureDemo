@@ -1,3 +1,4 @@
+using CleanArchitectureDemo.Api.Configurations;
 using CleanArchitectureDemo.Infrastructure.Data.Context;
 using CleanArchitectureDemo.Infrastructure.IoC;
 using MediatR;
@@ -31,6 +32,8 @@ namespace CleanArchitectureDemo.Api
             });
 
             services.AddMediatR(typeof(Startup));
+
+            services.RegisterAutoMapper();
 
             // Register services from Dependency Injectio (Infrastructure.IoC)
             RegisterServices(services);

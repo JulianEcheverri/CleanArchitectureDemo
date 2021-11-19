@@ -1,5 +1,6 @@
 using CleanArchitectureDemo.Infrastructure.Data.Context;
 using CleanArchitectureDemo.Infrastructure.IoC;
+using CleanArchitectureDemo.MVC.Configurations;
 using CleanArchitectureDemo.MVC.Data;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -33,6 +34,8 @@ namespace CleanArchitectureDemo.MVC
             services.AddControllersWithViews();
 
             services.AddMediatR(typeof(Startup));
+
+            services.RegisterAutoMapper();
 
             // Register services from Dependency Injectio (Infrastructure.IoC)
             RegisterServices(services);
