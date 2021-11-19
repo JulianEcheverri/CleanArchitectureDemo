@@ -16,17 +16,17 @@ namespace CleanArchitectureDemo.Infrastructure.IoC
     {
         public static void RegisterServices(IServiceCollection services)
         {
-            // Application layer
-            services.AddScoped<ICourseService, CourseService>();
-
-            // Infrastructure.Data Layer
-            services.AddScoped<ICourseRepository, CourseRepository>();
-
             // Domain Inmemory MediatR
             services.AddScoped<IMediatorHandler, InMemoryBus>();
 
             // Domain handlers
             services.AddScoped<IRequestHandler<CreateCourseCommand, bool>, CourseCommandHandler>();
+
+            // Application layer
+            services.AddScoped<ICourseService, CourseService>();
+
+            // Infrastructure.Data Layer
+            services.AddScoped<ICourseRepository, CourseRepository>();
 
             services.AddScoped<UniversityDBContext>();
         }
