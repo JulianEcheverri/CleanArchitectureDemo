@@ -1,4 +1,4 @@
-# Clean Architecture Demo
+# Clean Architecture Demo with CQRS and MediatR
 
 #### It was created two folders for managing infrastructure.IOC --> IOC means Inversion of Control, helpful for dependency injection and responsibility segregation
 
