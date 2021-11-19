@@ -7,6 +7,7 @@ namespace CleanArchitectureDemo.Domain.Interfaces
     public interface ICourseRepository
     {
         IQueryable<Course> GetCourses();
+
         Task<bool> Add(Course course);
     }
 }

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CleanArchitectureDemo.Infrastructure.Data.Context
 {
-    public class UniversityDBContext: DbContext
+    public class UniversityDBContext : DbContext
     {
         public UniversityDBContext(DbContextOptions options) : base(options)
         {
