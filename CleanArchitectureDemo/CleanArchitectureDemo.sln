@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31912.275
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{F1A42A61-C1C1-42D0-8D87-37879ED27794}"
 EndProject
@@ -22,6 +22,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureDemo.Application", "CleanArchitectureDemo.Application\CleanArchitectureDemo.Application.csproj", "{C588E59E-6521-4FE5-9C5B-8EC0A448B407}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.IoC", "Infrastructure.IoC\Infrastructure.IoC.csproj", "{7F04F146-C43D-43A4-8305-7B828BA1F7FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure.Bus", "Infrastructure.Bus", "{71DD9683-D3DF-4163-B54B-6FFFC345B918}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{B6B3F9E5-A53A-41DE-BF19-9B886423CB8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
