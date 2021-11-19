@@ -1,8 +1,10 @@
 ﻿using CleanArchitectureDemo.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitectureDemo.MVC.Controllers
 {
+    //[Authorize]
     public class CourseController : Controller
     {
         private readonly ICourseService _courseService;
