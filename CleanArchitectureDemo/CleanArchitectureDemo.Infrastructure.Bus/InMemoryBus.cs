@@ -1,7 +1,6 @@
 ﻿using CleanArchitectureDemo.Domain.Core.Bus;
 using CleanArchitectureDemo.Domain.Core.Commands;
 using MediatR;
-using System;
 using System.Threading.Tasks;
 
 namespace CleanArchitectureDemo.Infrastructure.Bus

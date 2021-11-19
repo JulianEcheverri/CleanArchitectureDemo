@@ -10,7 +10,7 @@ using CleanArchitectureDemo.Infrastructure.Data.Repositories;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Infrastructure.IoC
+namespace CleanArchitectureDemo.Infrastructure.IoC
 {
     public class DependencyInjection
     {
@@ -28,8 +28,7 @@ namespace Infrastructure.IoC
             // Domain handlers
             services.AddScoped<IRequestHandler<CreateCourseCommand, bool>, CourseCommandHandler>();
 
-            //services.AddScoped<UniversityDBContext>();
-
+            services.AddScoped<UniversityDBContext>();
         }
     }
 }

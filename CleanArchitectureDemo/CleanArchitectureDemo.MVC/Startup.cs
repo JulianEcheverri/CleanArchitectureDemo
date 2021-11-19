@@ -1,6 +1,6 @@
 using CleanArchitectureDemo.Infrastructure.Data.Context;
+using CleanArchitectureDemo.Infrastructure.IoC;
 using CleanArchitectureDemo.MVC.Data;
-using Infrastructure.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
