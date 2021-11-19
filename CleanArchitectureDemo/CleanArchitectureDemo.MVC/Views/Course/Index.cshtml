@@ -1,12 +1,11 @@
-﻿@model CleanArchitectureDemo.Application.ViewModels.CourseViewModel
-
+﻿@model IEnumerable<CleanArchitectureDemo.Application.ViewModels.CourseViewModel>
 @{
     Layout = "_Layout";
 }
 
 <div class="container body-content">
     <div class="row course-content">
-        @foreach (var item in Model.Courses)
+        @foreach (var item in Model)
         {
             <div class="course-image-container">
                 <div class="course-image" style="background-image:url(@item.ImageUrl)"></div>

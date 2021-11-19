@@ -1,12 +1,12 @@
 ﻿using CleanArchitectureDemo.Domain.Models;
-using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace CleanArchitectureDemo.Domain.Interfaces
 {
     public interface ICourseRepository
     {
-        IEnumerable<Course> GetCourses();
+        IQueryable<Course> GetCourses();
         Task<bool> Add(Course course);
     }
 }

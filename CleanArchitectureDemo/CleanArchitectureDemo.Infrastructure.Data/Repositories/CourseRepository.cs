@@ -1,8 +1,7 @@
 ﻿using CleanArchitectureDemo.Domain.Interfaces;
 using CleanArchitectureDemo.Domain.Models;
 using CleanArchitectureDemo.Infrastructure.Data.Context;
-using System;
-using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace CleanArchitectureDemo.Infrastructure.Data.Repositories
@@ -16,7 +15,7 @@ namespace CleanArchitectureDemo.Infrastructure.Data.Repositories
             _universityDBContext = universityDBContext;
         }
 
-        public IEnumerable<Course> GetCourses()
+        public IQueryable<Course> GetCourses()
         {
             return _universityDBContext.Courses;
         }
